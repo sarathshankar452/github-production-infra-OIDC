@@ -34,7 +34,6 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: GitHubTerraformPlan
-          allowed-account-ids: 008826676356
 
       - name: Verify AWS identity
         run: aws sts get-caller-identity
