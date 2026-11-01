@@ -16,7 +16,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::008826676356:role/oidc-role
+          role-to-assume: arn:aws:iam::008826676356:role/oidc1role
           aws-region: us-east-1
 
       - run: aws sts get-caller-identity
